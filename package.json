@@ -1,0 +1,37 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Вёрстка для рукодельного интернет-магазина",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css --fix'",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnaHermosa/mishka.git"
+  },
+  "author": "Кравчишина Елена",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UnaHermosa/mishka/issues"
+  },
+  "homepage": "https://github.com/UnaHermosa/mishka#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^6.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-plumber": "^1.2.1",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0"
+  }
+}
