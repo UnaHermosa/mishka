@@ -1,0 +1,9 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-weight: 400 700;
+    src:
+      local('Open Sans'), 
+      url(OpenSans-VariableFont_wdth\,wght.ttf) format('ttf supports variations'),
+      url(OpenSans-VariableFont_wdth\,wght.ttf) format('ttf-variations');
+  }

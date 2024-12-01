@@ -1,2 +1,13 @@
 node_modules/
 dist/
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+npm-debug.*
+source/css/*.css
+source/css/*.map
+Thumbs.db

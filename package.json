@@ -11,6 +11,7 @@
     "lintfix": "stylelint './src/**/*.css --fix'",
     "checkAll": "npm run check && npm run lint",
     "fixAll": "npm run format && npm run lintfix",
+    "clean": "gulp clean",
     "build": "gulp build",
     "dev": "gulp"
   },
@@ -25,13 +26,12 @@
   },
   "homepage": "https://github.com/UnaHermosa/mishka#readme",
   "devDependencies": {
-    "browser-sync": "^3.0.3",
+    "browser-sync": "^2.29.1",
     "del": "^6.0.0",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-concat-css": "^3.1.0",
-    "gulp-imagemin": "^9.1.0",
     "gulp-plumber": "^1.2.1",
-    "prettier": "^3.3.3",
-    "stylelint": "^16.10.0"
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0"
   }
 }
