@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог</title>
+  <title>Заказать товар</title>
   <link rel="stylesheet" href="bundle.css">
 </head>
 
@@ -23,7 +23,7 @@
       </button>
       <ul class="page__header-menu menu">
         <li class="menu__item">
-          <a class="menu__link">Каталог товаров</a>
+          <a class="menu__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="form.html">Вязание на заказ</a>
@@ -46,90 +46,95 @@
     </nav>
     <p class="page__header-delivery">Бесплатная доставка по России</p>
   </header>
-  <main class="page__main">order
-        <li class="list__item">
-          <article class="goods__card card">
-            <div class="card__title-wrapper">
-              <h2 class="card__title">Зайчик-попрыгайчик</h2>
-              <span class="card__description">Рост 30 см, вес 200 г</span>
-            </div>
-            <div class="card__price-wrapper">
-              <span class="card__price">1 200 руб.</span>
-              <button class="card__cart">
-                <span class="visually-hidden">купить</span>
-              </button>
-            </div>
-            <img class="card__img" 
-              src="images/rabbit-mobile@1x.jpg" 
-              width="260" 
-              height="195"  
-              alt="Вязаный зайчик в бирюзовых тонах"
-              loading="lazy">
-          </article>
-        </li>
-        <li class="list__item">
-            <article class="goods__card card">
-              <div class="card__title-wrapper">
-                <h2 class="card__title">Корзинка для белья</h2>
-                <span class="card__description">Диаметр 15 см, высота 10 см</span>
-              </div>
-              <div class="card__price-wrapper">
-                <span class="card__price">690 руб.</span>
-                <button class="card__cart">
-                  <span class="visually-hidden">купить</span>
-                </button>
-              </div>
-              <img class="card__img" 
-                src="images/cart@1x.jpg" 
-                width="260" 
-                height="195"  
-                alt="Вязаный зайчик в бирюзовых тонах"
-                loading="lazy">
-            </article>
+  <main class="page__main">
+    <h1 class="page__main-header">Вязание на заказ</h1>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <fieldset class="forem__field">
+        <legend class="form__legend">Тип</legend>
+        <ul class="form__list list">
+          <li class="list__item">
+            <label class="label" for="accessories">Аксессуар для интерьера</label>
+            <input class="input__radio" type="radio" id="accessories" name="type" value="accessory">
           </li>
           <li class="list__item">
-            <article class="goods__card card">
-              <div class="card__title-wrapper">
-                <h2 class="card__title">Большая корзинкадля игрушек</h2>
-                <span class="card__description">Диаметр 30 см, высота 30 см</span>
-              </div>
-              <div class="card__price-wrapper">
-                <span class="card__price">1 500 руб.</span>
-                <button class="card__cart">
-                  <span class="visually-hidden">купить</span>
-                </button>
-              </div>
-              <img class="card__img" 
-                src="images/big-cart@1x.jpg" 
-                width="260" 
-                height="195"  
-                alt="Вязаный зайчик в бирюзовых тонах"
-                loading="lazy">
-            </article>
+            <label class="label" for="toy">Детская игрушка</label>
+            <input class="input__radio" type="radio" id="toy" name="type" value="toy">
           </li>
-      </ul>
-    </section>
-    <section class="production">
-      <h2 class="production__title">Процесс производства</h2>
-      <a class="production__link" href="#">
-        <img class="production__video-preview" 
-          src="images/video-mobile@1x.jpg" 
-          width="260" 
-          height="150" 
-          alt="Корзинка в полоску мятного и серого цветов крупным кадром"
-          loading="lazy">
-        <button class="production__video-button" type="button">
-          <span class="visually-hidden">Кнопка для проигрывания видео</span>
-        </button>
-      </a>
-      <div class="production__text-wrapper">
-        <p class="production__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное 
-          видео о том, как появляются наши товары.
-        </p>
-        <button class="production__button-order button">СДелать заказ</button>
-      </div>
-    </section>
+        </ul>
+      </fieldset>
+      <fieldset class="forem__field">
+        <legend class="form__legend">Цвет</legend>
+        <ul class="form__list list">
+          <li class="list__item">
+            <label class="label" for="white">Белый</label>
+            <input class="input__checkbox" type="checkbox" id="white" name="color" value="white" checked>
+          </li>
+          <li class="list__item">
+            <label class="label" for="gray">Серый</label>
+            <input class="input__radio" type="checkbox" id="gray" name="color" value="gray" checked>
+          </li>
+          <li class="list__item">
+            <label class="label" for="tiffany">«Тиффани»</label>
+            <input class="input__radio" type="checkbox" id="tiffany" name="color" value="tiffany">
+          </li>
+          <li class="list__item">
+            <label class="label" for="black">Черный</label>
+            <input class="input__radio" type="checkbox" id="black" name="color" value="black">
+          </li>
+          <li class="list__item">
+            <label class="label" for="pink">Розовый</label>
+            <input class="input__radio" type="checkbox" id="pink" name="color" value="pink">
+          </li>
+          <li class="list__item">
+            <label class="label" for="orange">Оранжевый</label>
+            <input class="input__radio" type="checkbox" id="orange" name="color" value="orange">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="forem__field">
+        <legend class="form__legend">ФИО</legend>
+        <ul class="form__list list">
+          <li class="list__item">
+            <label class="label" for="first-name">Имя:</label>
+            <input class="input__text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*">
+          </li>
+          <li class="list__item">
+            <label class="label" for="last-name">Фамилия:</label>
+            <input class="input__text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*">
+          </li>
+          <li class="list__item">
+            <label class="label" for="middle-name">Отчество:</label>
+            <input class="input__text" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__field">
+        <legend class="visually-hidden">Контактные данные</legend>
+        <ul class="form__list list">
+          <li class="list__item">
+            <label class="label label--phone" for="phone">тел</label>
+            <input class="input__text" type="tel" id="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </li>
+          <li class="list__item">
+            <label class="label label--mail" for="mail">E-mail</label>
+            <input class="input__text" type="mail" id="mail" name="email" placeholder="Ваш Email*">
+          </li>
+        </ul>
+      </fieldset>
+      <label class="label" for="text">Доп</label>
+      <textarea 
+        class="input__text" 
+        name="text" 
+        id="text" 
+        placeholder="Опишите все ваши пожелания к заказу"
+        cols="20"
+        rows="30"></textarea>
+        <p class="form__text">*Поля обязательны для заполнения</p>
+        <button class="form__button button" type="submit">Отправить заказ</button>
+    </form>
   </main>
   <footer class="page__footer">
     <section class="footer__contacts contacts">
